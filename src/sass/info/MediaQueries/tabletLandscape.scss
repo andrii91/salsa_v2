@@ -1,0 +1,72 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+
+  & {
+    .xs-first {
+      -ms-flex-order: inherit;
+      order: inherit;
+    }
+
+    .head-img {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .head {
+      padding-top: 170px;
+
+      .container:before {
+            background: url(../images/himg.svg) center no-repeat;
+        bottom: inherit;
+        top: 0;
+        width: 89vw;
+        background-position: top right;
+        background-size: 100%;
+      }
+    }
+
+
+    nav.nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      transition: .3s;
+      padding: 36px 0;
+      background: 0 0;
+    }
+
+
+    .logo svg {
+      path {
+        fill: #000;
+      }
+
+      .mobileColor {
+        fill: #0A5C68;
+      }
+    }
+    
+    #nav-icon {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      position: static;
+      background: 0 0;
+      max-width: 100%;
+      li {
+        a {
+          color: #fff;
+        }
+      }
+    }
+.nav.fixed {
+    background: #fff;
+    }
+  }
+}
