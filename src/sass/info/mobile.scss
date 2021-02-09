@@ -95,7 +95,7 @@
   #nav-icon span {
     display: block;
     position: absolute;
-    height: 3.67px;
+    height: 4px;
     width: 50%;
     background: #FFEB34;
     opacity: 1;
@@ -126,12 +126,12 @@
 
   #nav-icon span:nth-child(3),
   #nav-icon span:nth-child(4) {
-    top: 7.36px;
+    top: 8px;
   }
 
   #nav-icon span:nth-child(5),
   #nav-icon span:nth-child(6) {
-    top: 14.72px;
+    top: 16px;
   }
 
   #nav-icon.open span:nth-child(1),
@@ -157,7 +157,7 @@
   }
 
   #nav-icon.open span:nth-child(2) {
-    left: calc(50% - 3.67px);
+    left: calc(50% - 4px);
     top: 0;
   }
 
@@ -178,7 +178,7 @@
   }
 
   #nav-icon.open span:nth-child(6) {
-    left: calc(50% - 3.67px);
+    left: calc(50% - 4px);
     top: 7px;
   }
 
@@ -269,7 +269,11 @@
   }
 
   .team {
+    padding-top: 45px;
     padding-bottom: 30px;
+  }
+  .our_job {
+    padding: 45px 0;
   }
 
   .projects-item_right,
@@ -356,7 +360,7 @@
     }
 
     .img {
-      height: 249px;
+      height: 249px !important;
       margin-left: -16px;
       margin-right: -16px;
     }
@@ -455,7 +459,16 @@
     position: static;
     width: 100vw;
     height: 92.53333333333333vw;
+  .gm-style-iw.gm-style-iw-c {
+    padding: 14px;
 
+    h6, p {
+      font-size: 10px;
+      line-height: 15px;
+
+    }
+    
+  }
   }
 
   .contacts-item {

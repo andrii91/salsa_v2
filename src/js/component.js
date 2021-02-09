@@ -151,7 +151,7 @@ $(document).ready(function () {
 
     Output(
       "<span><span>" + file.name +
-      //		"</span> type: <span>" + file.type +
+      //    "</span> type: <span>" + file.type +
       "</span></span> <span style=\"margin-left: 5px; margin-right: 5px;\"> <span>" + file.size +
       "</span> bytes</span>"
     );
@@ -163,7 +163,7 @@ $(document).ready(function () {
 
   function initMap() {
     var element = document.getElementById('map');
-    if ($(document).width() > 1200) {
+    if ($(window).width() > 1200) {
       var options = {
         zoom: 17,
         center: {
@@ -567,7 +567,7 @@ $(document).ready(function () {
 
       if (properties.info) {
 
-        if ($(document).width() > 1200) {
+        if ($(window).width() > 1200) {
           var InfoWindow = new google.maps.InfoWindow({
             content: properties.info,
             pixelOffset: new google.maps.Size(180, 140),
@@ -575,13 +575,13 @@ $(document).ready(function () {
         } else {
           var InfoWindow = new google.maps.InfoWindow({
             content: properties.info,
-            pixelOffset: new google.maps.Size(160, 140),
+            pixelOffset: new google.maps.Size(120, 140),
           });
         }
         
-        $(window).on('resize', function () {
-          var win = $(this); //this = window
-          if (win > 1200) {
+        $(window).resize( function () {
+          
+          if ($(window).width() > 1200) {
             var InfoWindow = new google.maps.InfoWindow({
               content: properties.info,
               pixelOffset: new google.maps.Size(180, 140),
@@ -589,7 +589,7 @@ $(document).ready(function () {
           } else {
             var InfoWindow = new google.maps.InfoWindow({
               content: properties.info,
-              pixelOffset: new google.maps.Size(160, 140),
+              pixelOffset: new google.maps.Size(120, 140),
             });
           }
         })
@@ -617,7 +617,6 @@ $(document).ready(function () {
 
   if ($('div').hasClass('map')) {
     initMap();
-    $('.map img').trigger('click');
   }
 
 
@@ -628,7 +627,7 @@ $(document).ready(function () {
   });
 
 
-  if ($(document).width() < 1200) {
+  if ($(window).width() < 1200) {
     $('.mob-hide').remove();
 
     $('.mob-slider').slick({
@@ -655,9 +654,11 @@ $(document).ready(function () {
   }
 
 
-  $(window).on('resize', function () {
-    var win = $(this); //this = window
-    if (win < 1200) {
+  $(window).resize( function () {
+     if ($('div').hasClass('map')) {
+        initMap();
+      }
+    if ($(window).width() < 1200) {
       $('.mob-hide').remove();
 
       $('.mob-slider').slick({
@@ -670,13 +671,13 @@ $(document).ready(function () {
         variableWidth: true
       });
     } else {
-      $('.projects-item .title').each(function () {
+      /*$('.projects-item .title').each(function () {
         if ($(this).height() < 144) {
           $(this).parents('.projects-item ').find('.img').css({
             'height': '438px',
           })
         }
-      })
+      })*/
     }
   });
 

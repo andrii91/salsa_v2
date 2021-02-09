@@ -44,13 +44,15 @@ min-height: 917px;
   z-index: 9999;
   transition: .3s;
   padding: 65px 0;
+  line-height: 0;
 
   &.fixed {
     background: #2E1C63;
-    padding: 20px 0;
+    padding: 15px 0 ;
     filter: drop-shadow(0px 4px 27px rgba(0, 0, 0, 0.25));
 
     .logo {
+      
       svg {
         height: 60px;
         width: inherit;
@@ -135,7 +137,10 @@ min-height: 917px;
 }
 
 .logo {
+  display: inline-block;
+  line-height: 0;
   svg {
+  line-height: 0;
     transition: .3s;
     display: inline-block;
   }
@@ -166,7 +171,7 @@ min-height: 917px;
       span {
         &:before {
         background: linear-gradient(179.84deg, rgba(255, 255, 255, 0) 19.68%, #2E1C63 73.88%);
-//      background: linear-gradient(176.93deg, rgba(46, 28, 99, 0) 62.04%, #2E1C63 85.54%);
+      background: linear-gradient(176.93deg,rgba(10,92,104,0) 10.04%,#2E1C63 81.54%);
         }
         img {
           background: #2E1C63 !important;
@@ -435,15 +440,16 @@ background: #DEDDDC;
   cursor: pointer;
   &:hover {
     color: #000;
-    background: darken(#FFEB34,20%);
+    background: darken(#FFEB34,15%);
   }
 
-  &.white {
+    &.white {
     background: #FFFFFF;
     border-radius: 8px;
     border: 0;
     &:hover {
-        background: darken(#FFFFFF,20%);
+      color: #fff;
+        background: #2E1C63;
     }
   }
 }
@@ -547,7 +553,7 @@ background: #2F1E64;
 .contacts {
 //  background: url('../images/contacts-bg.jpg') no-repeat center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 100px 0 120px;
   position: relative;
   
 }
@@ -604,6 +610,8 @@ border-radius: 8px;
       line-height: 24px;
       text-transform: uppercase;
       color: #999999;
+      color: #000;
+      margin-top: 8px;
 
     }
     textarea {
@@ -629,7 +637,7 @@ border-radius: 8px;
     margin-bottom: 33px;
     
     label {
-      color: #0A5C68;
+      color: #000;
       text-decoration: underline;
       cursor: pointer;
       margin: 0;
@@ -638,7 +646,7 @@ border-radius: 8px;
         display: inline;
         border: 0;
         width: inherit;
-        color: #0A5C68;
+        color: #000;
       text-decoration: underline;
         margin: 0;
         padding: 0;
@@ -684,7 +692,7 @@ box-shadow: 0px 20px 50px #E5E5E5 !important;
     padding: 23px!important;
         overflow: visible !important;
     &:after {   
-          background: linear-gradient(45deg,rgba(18,84,94,1) 50%,rgba(18,84,94,0) 51%,rgba(18,84,94,0) 100%);
+          background: linear-gradient(45deg,rgba(47,30,100,1) 50%,rgba(18,84,94,0) 51%,rgba(18,84,94,0) 100%);
     box-shadow: -2px 2px 2px 0 rgba(178,178,178,.4);
     content: "";
     height: 15px;
