@@ -388,6 +388,11 @@
     -ms-flex-pack: center;
 
     li {
+      &:nth-child(2) {
+        img {
+              margin-bottom: -4px;
+        }
+      }
       img {
         max-width: 87px;
         max-height: 26px;
@@ -547,6 +552,15 @@
     .copy {
       font-size: 10px;
       line-height: 15px;
+    }
+  }
+  
+  .projects-item {
+    min-height: inherit;
+    .projects-content {
+      position: relative;
+      bottom: 0;
+      left: 0;
     }
   }
 }

@@ -160,6 +160,8 @@ min-height: 917px;
 //  transition: .3s;
   cursor: pointer;
   margin-top: 15px;
+  position: relative;
+  min-height: 738px;
   
   * {
     transition: .2s;
@@ -267,6 +269,12 @@ min-height: 917px;
       }
     }
   }
+  
+  .projects-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
 
 }
 
@@ -309,8 +317,14 @@ background: #2E1C63;
   justify-content: space-between;
   li {
     text-align: center;
+    &:nth-child(2) {
+      img {
+        margin-bottom: -11px;
+        max-height: 72px;
+      }
+    }
     img {
-      max-height: 72px;
+      max-height: 61px;
     }
   }
 }
