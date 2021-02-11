@@ -2,6 +2,11 @@ $(document).ready(function () {
   $(window).scroll(function () {
     return $('.nav').toggleClass("fixed", $(window).scrollTop() > 0);
   });
+
+  if ($(window).scrollTop() > 0) {
+    $('.nav').addClass('fixed');
+  }
+
   $('.scroll').click(function (e) {
     event.preventDefault();
     var id = $(this).attr('href'),
@@ -23,7 +28,7 @@ $(document).ready(function () {
 
   })
 
-  $('.projects-item, .our_job-item').click(function () {
+  $('.projects-content, .our_job-item').click(function () {
     window.open($(this).find('.link').attr('href'));
   })
 
@@ -37,9 +42,9 @@ $(document).ready(function () {
     function addFileToList(file) {
       $('#filedrag, .filedrag-title').hide();
       filesUploaded.push(new File(file));
-      
+
       $('.upload-results').css({
-         'margin-top': '26px',
+        'margin-top': '26px',
         'margin-bottom': '44px'
       })
     }
@@ -119,7 +124,7 @@ $(document).ready(function () {
 
       // remove submit button
       //    submitbutton.style.display = "none";
-      
+
     }
 
   }
@@ -578,9 +583,9 @@ $(document).ready(function () {
             pixelOffset: new google.maps.Size(120, 140),
           });
         }
-        
-        $(window).resize( function () {
-          
+
+        $(window).resize(function () {
+
           if ($(window).width() > 1200) {
             var InfoWindow = new google.maps.InfoWindow({
               content: properties.info,
@@ -623,10 +628,14 @@ $(document).ready(function () {
   $('#nav-icon').click(function () {
     $(this).toggleClass('open');
     $(this).parents('nav').toggleClass('open');
-//    $('nav .menu').toggleClass('open');
+    //    $('nav .menu').toggleClass('open');
   });
 
+  var itemProject = $('.projects .mob-hide').html();
+  var itemTeam = $('.team .mob-hide').html();
+  var countResize = 0;
 
+  
   if ($(window).width() < 1200) {
     $('.mob-hide').remove();
 
@@ -639,8 +648,8 @@ $(document).ready(function () {
       centerMode: false,
       variableWidth: true
     });
-    
-    $('.menu a').click(function(){
+
+    $('.menu a').click(function () {
       $('#nav-icon, .nav, .menu').removeClass('open');
     })
   } else {
@@ -654,11 +663,15 @@ $(document).ready(function () {
   }
 
 
-  $(window).resize( function () {
-     if ($('div').hasClass('map')) {
-        initMap();
-      }
+  $(window).resize(function () {
+    if ($('div').hasClass('map')) {
+      initMap();
+    }
+    
     if ($(window).width() < 1200) {
+      
+//      itemProject = $('.projects .mob-hide').html();
+      
       $('.mob-hide').remove();
 
       $('.mob-slider').slick({
@@ -670,7 +683,18 @@ $(document).ready(function () {
         centerMode: false,
         variableWidth: true
       });
+      
+      countResize = 0;
+      
     } else {
+      if(countResize == 0 && !$('.col-xl-4').hasClass('mob-hide')) {
+        $('.projects .append_next').after('<div class="col-xl-4 mob-hide">'+itemProject+'</div>');
+        $('.team .append_next').before('<div class="col-xl-4 mob-hide">'+itemTeam+'</div>');
+
+        $('.mob-slider').filter('.slick-initialized').slick('unslick');
+      }
+      
+      countResize++;
       /*$('.projects-item .title').each(function () {
         if ($(this).height() < 144) {
           $(this).parents('.projects-item ').find('.img').css({
