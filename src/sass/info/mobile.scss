@@ -403,6 +403,10 @@
   .projects {
     padding-bottom: 33px;
     padding-top: 40px;
+    .row {
+      margin-left: -26px;
+      margin-right: -26px;
+    }
   }
 
   .clients {
@@ -563,4 +567,88 @@
       left: 0;
     }
   }
+  
+    .projects-item {
+    min-height: inherit;
+  }
+
+  .head-item {
+    max-width: 463px;
+  }
+
+  .projects-item_right p {
+    max-width: 355px;
+  }
+
+  .projects {
+    padding-top: 80px;
+  }
+
+  .projects-item .title,
+  .projects-item p {
+    max-width: 100%;
+  }
+
+  .col-xl-4,
+  [class*="col-"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .row {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .projects-item {
+    padding-bottom: 16px;
+  }
+
+  .our_job-item .content {
+    max-width: calc(100% - 88px);
+  }
+
+  .team-item,
+  .team-item img {
+    border-radius: 8px;
+  }
+
+  .team-item .team-content:before {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .head-img img {
+    width: 100%;
+  }
+
+  .head .container:before {
+    height: 900px;
+  }
+
+  .order-btn {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 16px 48px;
+    border-radius: 8px;
+
+
+
+    &.white {
+      border-radius: 8px;
+
+
+    }
+  }
+  .team {
+    padding: 80px 0 40px;
+     .row {
+      margin-left: -26px;
+      margin-right: -26px;
+    }
+  }
+  .our_job {
+    padding: 80px 0;
+  }
+
+  
 }
