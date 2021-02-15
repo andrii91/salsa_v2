@@ -66,7 +66,7 @@ body {
     .menu {
       li {
         a {
-          font-size: vw(19px);
+          font-size: vw(18px);
           line-height: 1.2;
 
 
@@ -97,8 +97,8 @@ body {
       font-family: Inter;
       font-style: normal;
       font-weight: 500;
-      font-size: vw(24px);
-      line-height: vw(32px);
+      font-size: vw(20px);
+      line-height: vw(28px);
       text-align: center;
       color: #FFFFFF;
       transition: .2s;
@@ -112,15 +112,15 @@ body {
 }
 
 .head-item {
-  max-width: vw(463px);
+  max-width: vw(420px);
   padding-left: vw(25px);
 
   h1 {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
-    font-size: vw(72px);
-    line-height: vw(80px);
+    font-size: vw(64px);
+    line-height: 1.2;
     color: #fff;
     margin: 0 0 vw(35px);
   }
@@ -129,8 +129,8 @@ body {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: vw(20px);
-    line-height: vw(34px);
+    font-size: vw(18px);
+    line-height: 1.6;
     color: #fff;
     margin-bottom: 0;
   }
@@ -147,7 +147,7 @@ body {
   svg {
     line-height: 0;
      width: inherit;
-    height: vw(92px);
+    height: vw(75px);
     transition: .3s;
     display: inline-block;
   }
@@ -302,8 +302,8 @@ body {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: vw(20px);
-    line-height: vw(34px);
+    font-size: vw(18px);
+    line-height: vw(32px);
     margin-bottom: vw(35px);
     color: #000000;
     max-width: vw(355px);
@@ -314,8 +314,8 @@ body {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: vw(48px);
-  line-height: vw(64px);
+  font-size: vw(42px);
+  line-height: vw(58px);
   color: #000000;
   margin-bottom: vw(35px);
 }
@@ -437,8 +437,8 @@ body {
       font-family: Raleway;
       font-style: normal;
       font-weight: bold;
-      font-size: vw(24px);
-      line-height: vw(35px);
+      font-size: vw(20px);
+      line-height: vw(31px);
       color: #333333;
       margin-bottom: vw(27px);
       min-height: vw(70px);
@@ -521,8 +521,8 @@ body {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: vw(20px);
-    line-height: vw(34px);
+    font-size: vw(18px);
+    line-height: vw(32px);
     color: #fff;
     margin-bottom: vw(38px);
   }
@@ -578,7 +578,7 @@ body {
       font-style: normal;
       font-weight: bold;
       font-size: vw(24px);
-      line-height: vw(43px);
+      line-height: 1;
       color: #FFFFFF;
       margin-bottom: vw(12.91px);
     }
@@ -588,10 +588,10 @@ body {
       font-style: normal;
       font-weight: normal;
       font-size: vw(16px);
-      line-height: vw(24px);
+      line-height: 1;
       text-transform: uppercase;
       color: #FFFFFF;
-      margin-bottom: vw(36px);
+      margin-bottom: vw(35px);
 
     }
 
@@ -600,7 +600,7 @@ body {
       font-style: normal;
       font-weight: normal;
       font-size: vw(18px);
-      line-height: vw(23px);
+      line-height: vw(27px);
       color: #FFFFFF;
       margin-bottom: 0;
     }

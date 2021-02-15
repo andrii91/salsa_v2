@@ -33,7 +33,16 @@ $(document).ready(function () {
   })
 
 
-
+function kitcut( text, limit) {
+  text = text.trim();
+  if( text.length <= limit) return text;
+  text = text.slice( 0, limit); // тупо отрезать по лимиту
+  lastSpace = text.lastIndexOf(" ");
+  if( lastSpace > 0) { // нашлась граница слов, ещё укорачиваем
+    text = text.substr(0, lastSpace);
+  }
+  return text;
+}
 
   var ViewModel = function () {
     var self = this;
@@ -54,7 +63,7 @@ $(document).ready(function () {
       construct(newFile);
 
       function construct(file) {
-        self.name = file.name;
+        self.name = kitcut(file.name.split('.')[0], 30);
         self.type = file.type;
         self.size = file.size;
         self.icon = setIconBasedOnFileType(file.type);
@@ -156,9 +165,9 @@ $(document).ready(function () {
 
     Output(
       "<span><span>" + file.name +
-      //    "</span> type: <span>" + file.type +
+      //		"</span> type: <span>" + file.type +
       "</span></span> <span style=\"margin-left: 5px; margin-right: 5px;\"> <span>" + file.size +
-      "</span> bytes</span>"
+      "</span> B</span>"
     );
 
   }

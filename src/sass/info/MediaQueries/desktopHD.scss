@@ -142,7 +142,7 @@
         .menu {
           li {
             a {
-              font-size: 19px;
+              font-size: 18px;
               line-height: 1.2;
 
 
@@ -173,8 +173,8 @@
           font-family: Inter;
           font-style: normal;
           font-weight: 500;
-          font-size: 24px;
-          line-height: 32px;
+          font-size: 20px;
+          line-height: 28px;
           text-align: center;
           color: #FFFFFF;
           transition: .2s;
@@ -195,8 +195,8 @@
         font-family: Raleway;
         font-style: normal;
         font-weight: bold;
-        font-size: 72px;
-        line-height: 80px;
+        font-size: 64px;
+        line-height: 1.2;
         color: #fff;
         margin: 0 0 35px;
       }
@@ -205,8 +205,8 @@
         font-family: Raleway;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
-        line-height: 34px;
+        font-size: 18px;
+        line-height: 1.6;
         color: #fff;
         margin-bottom: 0;
       }
@@ -221,6 +221,7 @@
       line-height: 0;
 
       svg {
+        height: 75px;
         line-height: 0;
         transition: .3s;
         display: inline-block;
@@ -376,8 +377,8 @@
         font-family: Raleway;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
-        line-height: 34px;
+        font-size: 18px;
+        line-height: 32px;
         margin-bottom: 35px;
         color: #000000;
         max-width: 355px;
@@ -388,8 +389,8 @@
       font-family: Raleway;
       font-style: normal;
       font-weight: bold;
-      font-size: 48px;
-      line-height: 64px;
+      font-size: 42px;
+      line-height: 58px;
       color: #000000;
       margin-bottom: 35px;
     }
@@ -511,8 +512,8 @@
           font-family: Raleway;
           font-style: normal;
           font-weight: bold;
-          font-size: 24px;
-          line-height: 35px;
+          font-size: 20px;
+          line-height: 31px;
           color: #333333;
           margin-bottom: 27px;
           min-height: 70px;
@@ -595,8 +596,8 @@
         font-family: Raleway;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
-        line-height: 34px;
+        font-size: 18px;
+        line-height: 32px;
         color: #fff;
         margin-bottom: 38px;
       }
@@ -652,7 +653,7 @@
           font-style: normal;
           font-weight: bold;
           font-size: 24px;
-          line-height: 43px;
+          line-height: 1;
           color: #FFFFFF;
           margin-bottom: 12.91px;
         }
@@ -662,10 +663,10 @@
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
-          line-height: 24px;
+          line-height: 1;
           text-transform: uppercase;
           color: #FFFFFF;
-          margin-bottom: 36px;
+          margin-bottom: 35px;
 
         }
 
@@ -674,7 +675,7 @@
           font-style: normal;
           font-weight: normal;
           font-size: 18px;
-          line-height: 23px;
+          line-height: 27px;
           color: #FFFFFF;
           margin-bottom: 0;
         }
