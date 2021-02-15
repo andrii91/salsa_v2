@@ -180,7 +180,7 @@
           transition: .2s;
 
           &:hover {
-            color: #FFEB34;
+            color: #FBCA1C;
           }
         }
 
@@ -460,7 +460,7 @@
         background: #2F1E64;
 
         .svg {
-          background: #FFEB34;
+          background: #FBCA1C;
 
           svg {
             path {
@@ -471,15 +471,15 @@
 
         .content {
           .title {
-            color: #FFEB34;
+            color: #FBCA1C;
           }
 
           .link {
-            color: #FFEB34;
+            color: #FBCA1C;
 
             svg {
               path {
-                fill: #FFEB34;
+                fill: #FBCA1C;
               }
             }
           }
@@ -514,7 +514,7 @@
           font-weight: bold;
           font-size: 20px;
           line-height: 31px;
-          color: #333333;
+          color: #000;
           margin-bottom: 27px;
           min-height: 70px;
           display: flex;
@@ -556,7 +556,7 @@
       text-transform: uppercase;
       color: #000000;
       padding: 16px 48px;
-      background: #FFEB34;
+      background: #FBCA1C;
       border-radius: 8px;
       transition: .3s;
       display: inline-block;
@@ -564,7 +564,7 @@
 
       &:hover {
         color: #000;
-        background: darken(#FFEB34, 15%);
+        background: darken(#FBCA1C, 15%);
       }
 
       &.white {
@@ -863,7 +863,7 @@
           font-weight: bold;
           font-size: 16px;
           line-height: 24px;
-          color: #FFEB34;
+          color: #FBCA1C;
           margin-bottom: 5px;
           position: relative;
           z-index: 3;
@@ -922,7 +922,7 @@
           transition: .3s;
 
           &:hover {
-            color: #FFEB34;
+            color: #FBCA1C;
           }
 
         }
@@ -931,7 +931,7 @@
     }
 
     .footer-bottom {
-      border-top: 1px solid #FFEB34;
+      border-top: 1px solid #FBCA1C;
       padding-top: 55px;
 
       .copy {
@@ -966,7 +966,7 @@
           transition: .3s;
 
           &:hover {
-            color: #FFEB34;
+            color: #FBCA1C;
           }
         }
       }

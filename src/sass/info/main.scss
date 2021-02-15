@@ -104,7 +104,7 @@ body {
       transition: .2s;
 
       &:hover {
-        color: #FFEB34;
+        color: #FBCA1C;
       }
     }
 
@@ -385,7 +385,7 @@ body {
     background: #2F1E64;
 
     .svg {
-      background: #FFEB34;
+      background: #FBCA1C;
 
       svg {
         path {
@@ -396,15 +396,15 @@ body {
 
     .content {
       .title {
-        color: #FFEB34;
+        color: #FBCA1C;
       }
 
       .link {
-        color: #FFEB34;
+        color: #FBCA1C;
 
         svg {
           path {
-            fill: #FFEB34;
+            fill: #FBCA1C;
           }
         }
       }
@@ -439,7 +439,7 @@ body {
       font-weight: bold;
       font-size: vw(20px);
       line-height: vw(31px);
-      color: #333333;
+      color: #000;
       margin-bottom: vw(27px);
       min-height: vw(70px);
       display: flex;
@@ -481,7 +481,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   padding: vw(16px) vw(48px);
-  background: #FFEB34;
+  background: #FBCA1C;
   border-radius: 8px;
   transition: .3s;
   display: inline-block;
@@ -489,7 +489,7 @@ body {
 
   &:hover {
     color: #000;
-    background: darken(#FFEB34, 15%);
+    background: darken(#FBCA1C, 15%);
   }
 
   &.white {
@@ -788,7 +788,7 @@ body {
       font-weight: bold;
       font-size: 16px;
       line-height: 24px;
-      color: #FFEB34;
+      color: #FBCA1C;
       margin-bottom: 5px;
       position: relative;
       z-index: 3;
@@ -847,7 +847,7 @@ body {
       transition: .3s;
 
       &:hover {
-        color: #FFEB34;
+        color: #FBCA1C;
       }
 
     }
@@ -856,7 +856,7 @@ body {
 }
 
 .footer-bottom {
-  border-top: vw(1px) solid #FFEB34;
+  border-top: vw(1px) solid #FBCA1C;
   padding-top: vw(55px);
 
   .copy {
@@ -891,7 +891,7 @@ body {
       transition: .3s;
 
       &:hover {
-        color: #FFEB34;
+        color: #FBCA1C;
       }
     }
   }

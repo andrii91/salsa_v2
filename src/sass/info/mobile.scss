@@ -77,6 +77,10 @@
     }
   }
 
+  .nav.fixed .menu li a {
+    font-size: 14px;
+        line-height: 21px;
+  }
 
   #nav-icon {
     width: 21px;
@@ -210,7 +214,7 @@
     padding: 15px 0;
 
     #nav-icon {
-      margin-top: 11px;
+      margin-top: 6px;
     }
   }
 
@@ -339,7 +343,8 @@
 
   .projects-item {
     margin: 0;
-    max-width: 250px;
+    max-width: 255px;
+    width: 100%;
     padding-left: 16px;
     padding-right: 16px;
     box-shadow: 0 10px 20px rgba(87, 100, 119, .25);

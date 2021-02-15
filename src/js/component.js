@@ -652,7 +652,7 @@ function kitcut( text, limit) {
       dots: false,
       arrows: false,
       infinite: false,
-      speed: 300,
+      speed: 100,
       slidesToShow: 1,
       centerMode: false,
       variableWidth: true
@@ -687,7 +687,7 @@ function kitcut( text, limit) {
         dots: false,
         arrows: false,
         infinite: false,
-        speed: 300,
+        speed: 100,
         slidesToShow: 1,
         centerMode: false,
         variableWidth: true
